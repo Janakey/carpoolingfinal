@@ -1,0 +1,75 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  background-color: #FFEB3B; /* Yellow background */
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  text-align: center;
+}
+
+/* Header Styling */
+.container h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5em;
+  color: #795548; /* Brown color for the title */
+  margin-bottom: 10px;
+}
+
+.intro {
+  font-size: 1.2em;
+  color: #4CAF50; /* Green for intro text */
+  margin-bottom: 30px;
+}
+
+/* Transport Options Section */
+.transport-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+}
+
+.option-card {
+  background-color: #FFFFFF; /* White card background */
+  color: #333;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.option-card h2 {
+  font-size: 1.5em;
+  color: #795548; /* Brown for card titles */
+  margin-bottom: 10px;
+}
+
+.option-card p {
+  font-size: 1em;
+  color: #333; /* Regular text color */
+}
+
+/* Hover Effects */
+.option-card:hover {
+  background-color: #795548; /* Brown hover background */
+  color: #FFEB3B; /* Yellow text on hover */
+}
+
+.option-card:hover h2, .option-card:hover p {
+  color: #FFEB3B; /* Yellow text for card titles and descriptions on hover */
+}

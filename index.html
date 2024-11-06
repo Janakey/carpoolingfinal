@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carpooling - Choose Your Ride</title>
+    
+    <!-- Google Fonts Import -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&display=swap">
+    
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Main Section -->
+    <div class="container">
+        <h1>Carpooling and Ride-Sharing Networks</h1>
+        <p class="intro">Select your preferred mode of transportation to start your journey with us!</p>
+
+        <!-- Search Bar for Ride Filter -->
+        <input type="text" id="location" placeholder="Search by transport type:" onkeyup="filterRides()">
+
+        <!-- Transportation Options -->
+        <div class="transport-options" id="rideList">
+            <a href="./car.html" class="option-card">
+                <h2>Car</h2>
+                <p>Share a ride and reduce your commute costs.</p>
+            </a>
+            <a href="./bus.html" class="option-card">
+                <h2>Bus</h2>
+                <p>Join a bus pool to travel sustainably.</p>
+            </a>
+            <a href="./bike.html" class="option-card">
+                <h2>Bike</h2>
+                <p>Stay active and eco-friendly with bike sharing.</p>
+            </a>
+            <a href="./auto.html" class="option-card">
+                <h2>Auto</h2>
+                <p>Hop into a shared auto for short-distance travel.</p>
+            </a>
+            <a href="./others.html" class="option-card">
+                <h2>Others</h2>
+                <p>Discover more sustainable transport options.</p>
+            </a>
+        </div>
+        <div class="auth-links">
+            <p><a href="login.html" class="auth-btn">Login</a></p>
+            <p>Don't have an account? <a href="signup.html" class="auth-btn">Sign Up</a></p>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" onclick="scrollToTop()">Back to Top</button>
+
+    <!-- Responsive Menu -->
+    <button class="menu-toggle" onclick="toggleMenu()">☰ Menu</button>
+    <ul id="nav-menu" class="nav-menu">
+        <li><a href="./car.html">Car</a></li>
+        <li><a href="./bus.html">Bus</a></li>
+        <li><a href="./bike.html">Bike</a></li>
+        <li><a href="./auto.html">Auto</a></li>
+        <li><a href="./others.html">Others</a></li>
+    </ul>
+
+    <!-- Link to JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

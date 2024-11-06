@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Sharing - EasyCarpool</title>
+    
+    <!-- Google Fonts Import -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&display=swap">
+    
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="transport_style.css">
+    
+    <!-- Link to JavaScript -->
+    <script src="auto-sharing.js" defer></script>
+</head>
+<body>
+    <!-- Main Container -->
+    <div class="container">
+        <header>
+            <h1>Auto Sharing</h1>
+            <p>Join an auto pool for convenient, short-distance travel in an eco-friendly way.</p>
+        </header>
+
+        <!-- Details Section -->
+        <section class="details">
+            <h2>Why Choose Auto Sharing?</h2>
+            <p>Auto sharing offers a flexible, convenient solution for local travel. It’s cost-effective for shorter commutes and reduces the need for personal vehicles on busy streets.</p>
+        </section>
+
+        <!-- Interactive Form for Joining Auto Pool -->
+        <section id="join-form">
+            <h2>Join Auto Sharing Program</h2>
+            <form id="autoForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="route">Preferred Route:</label>
+                <input type="text" id="route" name="route" required>
+
+                <label for="date">Travel Date:</label>
+                <input type="date" id="date" name="date" required>
+
+                <button type="submit" class="btn">Join Auto Pool</button>
+            </form>
+            <p id="formFeedback"></p>
+        </section>
+
+        <!-- Back Button -->
+        <button class="btn back-btn" onclick="window.history.back()">Back to Main Page</button>
+    </div>
+</body>
+</html>
