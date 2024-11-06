@@ -73,3 +73,82 @@ body {
 .option-card:hover h2, .option-card:hover p {
   color: #FFEB3B; /* Yellow text for card titles and descriptions on hover */
 }
+* Back to Top Button */
+#backToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #FFCC00; /* Yellow background */
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  display: none;
+}
+
+#backToTop:hover {
+  background-color: #FF9900; /* Darker yellow on hover */
+}
+
+/* Responsive Menu */
+.nav-menu {
+  display: none;
+  list-style: none;
+  padding: 0;
+  background-color: #333;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.nav-menu.show {
+  display: block;
+}
+
+.nav-menu li {
+  margin: 15px 0;
+}
+
+.nav-menu li a {
+  color: white;
+  text-decoration: none;
+}
+
+.menu-toggle {
+  display: block;
+  background-color: #FFCC00;
+  border: none;
+  padding: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Media Query for Larger Screens */
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none; /* Hide menu toggle on larger screens */
+  }
+  .nav-menu {
+    display: block;
+    position: static;
+  }
+}
+/* Styling the Authentication Buttons */
+.auth-btn {
+  background-color: #795548; /* Brown background */
+  color: #FFEB3B; /* Yellow text */
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.auth-btn:hover {
+  background-color: #FFEB3B; /* Yellow background on hover */
+  color: #795548; /* Brown text on hover */
+}
